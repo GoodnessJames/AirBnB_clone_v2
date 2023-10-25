@@ -31,3 +31,8 @@ Table of Content
 Project Overview
 
 In this Project we will fork an existing codebase including making vairous changes/updates and improvements. This basics is to learn about unit testing, handling various storage engine and working environment variables.
+
+
+Background Context
+
+We are going to work in an existing codebase that raise questions and require updates. We will decify the codes without necessarily rewriting everything.
