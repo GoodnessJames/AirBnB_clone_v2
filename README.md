@@ -55,3 +55,8 @@ Folder and File Structure
 
 - `README.md`: This documentation file.
 
+Python Scripts
+
+These scripts classes and methods for different functionalities. Proper documentation is provided within the code.
+
+Python Unit Tests.
