@@ -67,3 +67,6 @@ To run all tests:
 ```bash
 python3 -m unittest discover tests
 
+SQL Scripts
+
+SQL Scripts are made available in the script/Folder. This scripts interract with the MySQL database and are executed on 20.04 LTS using MySQL 8.0. 
