@@ -81,4 +81,13 @@ Getting Started
 - Run the SQL scripts in the scripts/Folder to create the necessary tables.
 
 - Execute the python scripts to interract with the codebase.
+
+Contributors
  
+Name: Ginika Elizabeth Nna
+
+Email: elizabethginika9@gmail.com
+
+Name: Goodness James Akoma
+
+Email: akomagoodness97@gmail.com
