@@ -36,3 +36,14 @@ In this Project we will fork an existing codebase including making vairous chang
 Background Context
 
 We are going to work in an existing codebase that raise questions and require updates. We will decify the codes without necessarily rewriting everything.
+
+Requirements
+
+- Implementing Pycodestyle
+
+- Installing MySQL 8.0 and SQLAlchemy 1.4.x
+
+- Implementing Environment variables such as HBNB_ENV, HBNB_MYSQL_USER, HBNB_MYSQL_PWD, HBNB_MYSQL_HOST, HBNB_MYSQL_DB, HBNB_TYPE_STORAGE
+
+
+
