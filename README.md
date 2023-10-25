@@ -8,7 +8,7 @@ Table of Content
 
 - Requirements
 
-- File Structure
+- Folder and File Structure
 
 - Python Scripts
 
@@ -20,8 +20,14 @@ Table of Content
 
 - Contributors
 
+- license
+
 - Tasks
 
 - Acknowledgement
 
 - Authours
+
+Project Overview
+
+In this Project we will fork an existing codebase including making vairous changes/updates and improvements. This basics is to learn about unit testing, handling various storage engine and working environment variables.
