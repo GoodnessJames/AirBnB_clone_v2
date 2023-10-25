@@ -63,3 +63,7 @@ Python Unit Tests.
 
 This tests are important to ensure the codes works perfectly well. We used the unittest module to create and run the tests. They are organised in the same structure as the project.
 
+To run all tests:
+```bash
+python3 -m unittest discover tests
+
