@@ -45,5 +45,11 @@ Requirements
 
 - Implementing Environment variables such as HBNB_ENV, HBNB_MYSQL_USER, HBNB_MYSQL_PWD, HBNB_MYSQL_HOST, HBNB_MYSQL_DB, HBNB_TYPE_STORAGE
 
+Folder and File Structure
 
+- `models/`: Contains python classes that represent objects and their interractions.
+
+- `tests/`: Contains Unit Tests for various modules.
+
+- `scripts/`: SQL scripts to set up anf interract with MySQL database.
 
