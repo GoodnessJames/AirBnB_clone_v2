@@ -69,4 +69,16 @@ python3 -m unittest discover tests
 
 SQL Scripts
 
-SQL Scripts are made available in the script/Folder. This scripts interract with the MySQL database and are executed on 20.04 LTS using MySQL 8.0. 
+SQL Scripts are made available in the script/Folder. This scripts interract with the MySQL database and are executed on 20.04 LTS using MySQL 8.0.
+
+
+Getting Started
+
+- Clone the Repository
+
+- Set up your MySQL database with the required environment variables. 
+
+- Run the SQL scripts in the scripts/Folder to create the necessary tables.
+
+- Execute the python scripts to interract with the codebase.
+ 
