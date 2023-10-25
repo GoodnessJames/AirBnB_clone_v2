@@ -61,4 +61,5 @@ These scripts classes and methods for different functionalities. Proper document
 
 Python Unit Tests.
 
-This tests
+This tests are important to ensure the codes works perfectly well. We used the unittest module to create and run the tests. They are organised in the same structure as the project.
+
