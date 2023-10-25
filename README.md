@@ -53,3 +53,5 @@ Folder and File Structure
 
 - `scripts/`: SQL scripts to set up anf interract with MySQL database.
 
+- `README.md`: This documentation file.
+
