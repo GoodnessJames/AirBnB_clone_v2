@@ -18,14 +18,6 @@
 
 - Contributors
 
-- License
-
-- Tasks
-
-- Acknowledgement
-
-- Authors
-
 ## Project Overview
 
 ## Requirements
