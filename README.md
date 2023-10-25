@@ -1,6 +1,4 @@
-Project Title: AirBnB clone - MySQL
-
-Table of Content
+## Table of Content
 
 - Project Overview
 
@@ -20,59 +18,43 @@ Table of Content
 
 - Contributors
 
-- license
+- License
 
 - Tasks
 
 - Acknowledgement
 
-- Authours
+- Authors
 
-Project Overview
+## Project Overview
 
-In this Project we will fork an existing codebase including making vairous changes/updates and improvements. This basics is to learn about unit testing, handling various storage engine and working environment variables.
+## Requirements
 
+- Pycodestyle
 
-Background Context
+- MySQL 8.0 and SQLAlchemy 1.4.x
 
-We are going to work in an existing codebase that raise questions and require updates. We will decify the codes without necessarily rewriting everything.
+- Environment variables such as HBNB_ENV, HBNB_MYSQL_USER, HBNB_MYSQL_PWD, HBNB_MYSQL_HOST, HBNB_MYSQL_DB, HBNB_TYPE_STORAGE
 
-Requirements
+## Python Scripts
 
-- Implementing Pycodestyle
+These scripts are classes and methods for different functionalities. Proper documentation is provided within the code.
 
-- Installing MySQL 8.0 and SQLAlchemy 1.4.x
+## Python Unit Tests
 
-- Implementing Environment variables such as HBNB_ENV, HBNB_MYSQL_USER, HBNB_MYSQL_PWD, HBNB_MYSQL_HOST, HBNB_MYSQL_DB, HBNB_TYPE_STORAGE
+These tests are important to ensure the codes work perfectly well. We used the unittest module to create and run the tests. They are organized in the same structure as the project.
 
-Folder and File Structure
-
-- `models/`: Contains python classes that represent objects and their interractions.
-
-- `tests/`: Contains Unit Tests for various modules.
-
-- `scripts/`: SQL scripts to set up anf interract with MySQL database.
-
-- `README.md`: This documentation file.
-
-Python Scripts
-
-These scripts classes and methods for different functionalities. Proper documentation is provided within the code.
-
-Python Unit Tests.
-
-This tests are important to ensure the codes works perfectly well. We used the unittest module to create and run the tests. They are organised in the same structure as the project.
-
-To run all tests:
-```bash
+### To run all tests:
+```
 python3 -m unittest discover tests
+```
 
-SQL Scripts
+## SQL Scripts
 
-SQL Scripts are made available in the script/Folder. This scripts interract with the MySQL database and are executed on 20.04 LTS using MySQL 8.0.
+SQL Scripts are made available in the script/Folder. These scripts interact with the MySQL database and are executed on 20.04 LTS using MySQL 8.0.
 
 
-Getting Started
+## Getting Started
 
 - Clone the Repository
 
@@ -80,14 +62,10 @@ Getting Started
 
 - Run the SQL scripts in the scripts/Folder to create the necessary tables.
 
-- Execute the python scripts to interract with the codebase.
+- Execute the Python scripts to interact with the codebase.
 
-Contributors
+## Contributors
  
-Name: Ginika Elizabeth Nna
+Ginika Elizabeth, Nna <elizabethginika9@gmail.com>
 
-Email: elizabethginika9@gmail.com
-
-Name: Goodness James Akoma
-
-Email: akomagoodness97@gmail.com
+Goodness James, Akoma <akomagoodness97@gmail.com>
