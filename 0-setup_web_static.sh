@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # Script to set up web server for deployment
 
 sudo apt-get -y update
@@ -16,3 +17,6 @@ sudo chown -hR ubuntu:ubuntu "/data/"
 
 sudo sed -i "${location}i ${hbnb_static}" "${default_sites}"
 sudo service nginx restart
+
+exit 0
+
