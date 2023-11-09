@@ -1,21 +1,28 @@
 #!/usr/bin/env bash
+# Script to set up web servers for deployment of web_static
 
-# Script to set up web server for deployment
-
+# Install Nginx if not already installed
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo service nginx start
 
-default_sites="/etc/nginx/sites-available/default"
-location=$(grep -Fn location $default_sites | head -1 | cut -d":" -f1)
-hbnb_static="\\\tlocation /hbnb_static/ {\n\t\talias /data/web_static/current/;\n\t}\n"
+# Create necessary folders
+sudo mkdir -p /data/web_static/releases/test/
+sudo mkdir -p /data/web_static/shared/
 
-sudo mkdir -p "/data/web_static/releases/test/" "/data/web_static/shared/"
-echo "<h1>Hello World!</h1>" | sudo tee "/data/web_static/releases/test/index.html"
-sudo ln -sf "/data/web_static/releases/test/" "/data/web_static/current"
-sudo chown -hR ubuntu:ubuntu "/data/"
+# Create a fake HTML file
+echo "<html><head></head><body>Holberton School</body></html>" | sudo tee /data/web_static/releases/test/index.html
 
-sudo sed -i "${location}i ${hbnb_static}" "${default_sites}"
+# Create or recreate symbolic link
+sudo ln -sf /data/web_static/releases/test/ /data/web_static/current
+
+# Give ownership to the ubuntu user and group recursively
+sudo chown -R ubuntu:ubuntu /data/
+
+# Update Nginx configuration
+sudo sed -i '/^\tlocation \/ {$/a\
+\t\talias /data/web_static/current/;' /etc/nginx/sites-available/default
+
+# Restart Nginx
 sudo service nginx restart
 
 exit 0
