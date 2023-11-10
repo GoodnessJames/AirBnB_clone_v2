@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 <<<<<<< HEAD
+<<<<<<< HEAD
 """
 Fabric script to generate a .tgz archive from the contents of the web_static folder.
 """
@@ -23,13 +24,16 @@ def do_pack():
 
 =======
 # Fabfile to generates a .tgz archive from the contents of web_static.
+=======
+# Fabric file that generates a .tgz archive from the contents of web_static.
+>>>>>>> cf79547f07a5aaaf592fba355822235780c8902e
 import os.path
 from datetime import datetime
 from fabric.api import local
 
 
 def do_pack():
-    """Create a tar gzipped archive of the directory web_static."""
+    """Create a tar gzip archive."""
     dt = datetime.utcnow()
     file = "versions/web_static_{}{}{}{}{}{}.tgz".format(dt.year,
                                                          dt.month,

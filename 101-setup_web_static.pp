@@ -1,4 +1,4 @@
-# Configures a web server for deployment of web_static.
+# Configures a web server for deployment of web_static using Puppet.
 
 # Nginx configuration file
 $nginx_conf = "server {
@@ -14,7 +14,7 @@ $nginx_conf = "server {
     }
 
     location /redirect_me {
-        return 301 http://cuberule.com/;
+        return 301 https://www.youtube.com/watch?v=EEZnkAgJA-Q;
     }
 
     error_page 404 /404.html;
