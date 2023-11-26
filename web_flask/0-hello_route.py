@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Start a Flask web app that listen on 0.0.0.0, port 5000
+This is a script that start a flask web app that listen on 0.0.0.0, port 5000
 routes: /: display "Hello HBNB!"
 """
 
