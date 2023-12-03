@@ -10,7 +10,7 @@ class FileStorage:
     __objects = {}
 
     def all(self, cls=None):
-        """returns a dictionary
+        """Returns a dictionary
         Return:
             returns a dictionary of __object
         """
@@ -40,8 +40,7 @@ class FileStorage:
             json.dump(temp, f)
 
     def delete(self, obj=None):
-        """ delete an existing element
-        """
+        """Deletes an existing element"""
         if obj:
             key = "{}.{}".format(type(obj).__name__, obj.id)
             del self.__objects[key]
@@ -71,5 +70,5 @@ class FileStorage:
             pass
 
     def close(self):
-        '''calls reload() method for deserializing the JSON file to objects'''
+        """Calls reload() method for deserializing the JSON file to objects"""
         self.reload()

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' DB storage class '''
+"""DB storage class"""
 from os import getenv
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import sessionmaker, scoped_session
@@ -11,12 +11,12 @@ import models
 
 
 class DBStorage:
-    ''' SQLAlchemy DB '''
+    """SQLAlchemy DB"""
     __engine = None
     __session = None
 
     def __init__(self) -> None:
-        ''' Class constructor '''
+        """Class constructor"""
 
         user = getenv(ENV.HBNB_MYSQL_USER)
         pwd = getenv(ENV.HBNB_MYSQL_PWD)
@@ -31,7 +31,7 @@ class DBStorage:
             Base.metadata.drop_all(self.__engine)
 
     def all(self, cls=None) -> dict:
-        ''' Query current DB session '''
+        """Query current DB session"""
         database = {}
 
         if cls != '':
@@ -51,26 +51,26 @@ class DBStorage:
             return database
 
     def new(self, obj) -> None:
-        '''Add object to DB'''
+        """Add a new object to DB"""
         self.__session.add(obj)
 
     def save(self):
-        '''Commit all current DB changes'''
+        """Commit all current DB changes"""
         self.__session.commit()
 
     def delete(self, obj=None) -> None:
-        '''Delete current DB session'''
+        """Delete current DB session"""
         if obj is None:
             return
         self.__session.delete(obj)
 
     def reload(self) -> None:
-        '''Commit all current DB changes and session'''
+        """Commit all current DB changes and session"""
         self.__session = Base.metadata.create_all(self.__engine)
         factory = sessionmaker(bind=self.__engine, expire_on_commit=False)
         Session = scoped_session(factory)
         self.__session = Session()
 
     def close(self) -> None:
-        '''Remove private session attribute'''
+        """"Close the working SQLAlchemy session."""
         self.__session.close()

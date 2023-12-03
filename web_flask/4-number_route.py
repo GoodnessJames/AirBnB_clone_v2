@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""
-Start a Flask application with routes
-/, /hbnb, /c/<text>
-"""
+"""Start a Flask application.
+Routes: /, /hbnb, /c/<text>, /python/<text>, /number/<n>"""
 
 from flask import Flask
 app = Flask(__name__)
@@ -11,32 +9,32 @@ app.url_map.strict_slashes = False
 
 @app.route('/')
 def hello_hbnb():
-    """display text"""
+    """Display Hello HBNB!"""
     return "Hello HBNB!"
 
 
 @app.route('/hbnb')
 def hbnb():
-    """display text"""
+    """Display HBNB"""
     return "HBNB"
 
 
 @app.route('/c/<text>')
 def c_text(text):
-    """display custom text given"""
+    """Display custom text given"""
     return "C {}".format(text.replace('_', ' '))
 
 
 @app.route('/python')
 @app.route('/python/<text>')
 def python_text(text="is cool"):
-    '''Python route'''
+    """Displays 'Python' followed by the value of <text>"""
     return 'Python {}'.format(text.replace('_', ' '))
 
 
 @app.route('/number/<int:n>')
-def text_if_int(n):
-    """display text only if int given"""
+def num(n):
+    """Displays 'n is a number' only if n is an integer."""
     return "{:d} is a number".format(n)
 
 

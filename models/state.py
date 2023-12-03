@@ -8,10 +8,7 @@ from models.stringtemplates import HBNB_TYPE_STORAGE, DB
 
 
 class State(BaseModel, Base):
-    """
-    State class
-    Relationship between Class state to city
-    """
+    """Represents a state for a MySQL database."""
     __tablename__ = 'states'
 
     if (getenv(HBNB_TYPE_STORAGE) == DB):
@@ -23,7 +20,7 @@ class State(BaseModel, Base):
 
         @property
         def cities(self):
-            '''Return a list of city instances in filestorage'''
+            """Return a list of city instances in filestorage"""
             from models import storage
 
             list_cities = []
